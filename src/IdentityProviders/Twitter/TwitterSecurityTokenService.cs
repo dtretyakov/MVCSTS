@@ -20,7 +20,7 @@ namespace MvcSTSApplication.IdentityProviders.Twitter
             _configurationProvider = configurationProvider;
         }
 
-        public Uri GetAutheticationUri(IDictionary<string, string> parameters, Uri callback)
+        public Uri GetAuthorizationUri(IDictionary<string, string> parameters, Uri callback)
         {
             var callbackUri = new UriBuilder(callback)
                 {

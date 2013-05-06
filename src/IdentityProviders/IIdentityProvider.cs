@@ -5,7 +5,7 @@ namespace MvcSTSApplication.IdentityProviders
 {
     public interface IIdentityProvider
     {
-        Uri GetAutheticationUri(IDictionary<string, string> parameters, Uri callback);
+        Uri GetAuthorizationUri(IDictionary<string, string> parameters, Uri callback);
 
         string GetResponseHtml(IDictionary<string, string> parameters, Uri signinUri);
     }

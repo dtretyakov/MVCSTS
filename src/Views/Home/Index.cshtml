@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Twitter STS</h2>
+
+<p>Application has following list of pages:</p>
+<ul>
+    <li><i>@Html.ActionLink(Url.Action("twittermetadata", "wsfederation"), "twittermetadata", "wsfederation")</i> for accessing service Federation Medata.</li>
+    <li><i>@Html.ActionLink(Url.Action("twitter", "wsfederation"), "twitter", "wsfederation")</i> for starting authorization process.</li>
+    <li><i>@Html.ActionLink(Url.Action("twittercallback", "wsfederation"), "twittercallback", "wsfederation")</i> for completing authorization process.</li>
+</ul>
